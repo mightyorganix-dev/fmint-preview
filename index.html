@@ -1,53 +1,64 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Foundation Ministries International — Redesign Preview</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<title>Foundation Ministries International — Redesign Preview</title><link rel="icon" href="img/logo.png">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
 <style>
 :root{--cream:#FAF6EF;--burg:#6B1E2E;--gold:#C9A24B;--ink:#2B2B2B}
-*{box-sizing:border-box}html{scroll-behavior:smooth}
-body{margin:0;background:var(--cream);color:var(--ink);font:18px/1.6 'Source Sans 3',sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}img{max-width:100%;display:block}
+body{margin:0;background:var(--cream);color:var(--ink);font:18px/1.65 'Source Sans 3',sans-serif}
 h1,h2,h3{font-family:'Playfair Display',serif;color:var(--burg);line-height:1.2;margin:0 0 .5em}
+h2{font-size:34px}h2+.rule{width:60px;height:3px;background:var(--gold);margin:-6px 0 22px}
 a{color:var(--burg)}
-.preview{background:var(--gold);color:var(--ink);text-align:center;font-size:15px;padding:6px;font-weight:600}
-header{position:sticky;top:0;z-index:10;background:var(--burg);color:#fff;display:flex;justify-content:space-between;align-items:center;padding:12px 18px}
-header .logo{font-family:'Playfair Display',serif;font-size:20px}
-header button{background:none;border:2px solid var(--gold);color:#fff;font-size:16px;padding:6px 12px;border-radius:6px}
-nav{display:none;background:var(--burg);position:sticky;top:56px;z-index:9}
-nav.open{display:block}nav a{display:block;color:#fff;padding:12px 18px;border-top:1px solid #8a3446;text-decoration:none}
-section{padding:48px 20px;max-width:1100px;margin:auto}
-.ph{background:linear-gradient(135deg,#d9c7a3,#8c4a55);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:600;border-radius:12px;text-align:center}
-.hero{padding:0;max-width:none}.hero .ph{border-radius:0;height:300px;font-size:15px;opacity:.9}
-.hero .txt{text-align:center;padding:28px 20px}.hero h1{font-size:40px}
-.btn{display:inline-block;background:var(--burg);color:#fff;padding:16px 28px;border-radius:40px;text-decoration:none;font-weight:600;margin:6px;border:none;font-size:18px;cursor:pointer}
-.btn.gold{background:var(--gold);color:var(--ink)}
-.visit{background:#fff;border-top:4px solid var(--gold)}.visit iframe{width:100%;height:260px;border:0;border-radius:12px}
-.grid{display:grid;gap:20px}.card{background:#fff;border-radius:12px;padding:20px;box-shadow:0 2px 8px #0001}
-.tag{font-size:13px;background:var(--gold);color:var(--ink);padding:2px 8px;border-radius:10px;font-weight:600}
+.preview{background:var(--gold);text-align:center;font-size:15px;padding:6px;font-weight:600}
+header{position:sticky;top:0;z-index:10;background:var(--burg);color:#fff;display:flex;justify-content:space-between;align-items:center;padding:8px 16px;box-shadow:0 2px 10px #0003}
+.brand{display:flex;gap:10px;align-items:center;color:#fff;text-decoration:none;font-family:'Playfair Display',serif;font-size:18px}.brand img{width:42px;height:42px;border-radius:50%}
+#mb{background:none;border:2px solid var(--gold);color:#fff;font-size:16px;padding:6px 12px;border-radius:6px}
+nav{display:none;background:var(--burg);position:sticky;top:58px;z-index:9}nav.open{display:block}
+nav a{display:block;color:#fff;padding:12px 18px;border-top:1px solid #8a3446;text-decoration:none}
+section{padding:56px 20px;max-width:1120px;margin:auto}
+.hero{position:relative;max-width:none;padding:0;min-height:560px;display:flex;align-items:flex-end;background:url(img/yt-iSXi5FgiCSQ.jpg) center/cover}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#2b0d1488 0%,#3b0f1ae6 75%)}
+.hero .txt{position:relative;z-index:1;color:#fff;text-align:center;padding:40px 20px;width:100%}
+.hero img.lg{width:110px;margin:0 auto 14px;border-radius:50%;border:3px solid var(--gold)}
+.hero h1{color:#fff;font-size:44px}.hero p{max-width:620px;margin:0 auto 18px}
+.btn{display:inline-block;background:var(--burg);color:#fff;padding:15px 28px;border-radius:40px;text-decoration:none;font-weight:600;margin:6px;border:none;font-size:18px;cursor:pointer}
+.btn.gold{background:var(--gold);color:var(--ink)}.btn.line{background:none;border:2px solid var(--burg);color:var(--burg)}
+.visitwrap{background:#fff;border-top:4px solid var(--gold)}.visitwrap iframe{width:100%;height:280px;border:0;border-radius:12px}
+.grid{display:grid;gap:24px}.card{background:#fff;border-radius:14px;padding:24px;box-shadow:0 4px 18px #0000000f}
 .note{font-style:italic;color:#7a6a55;font-size:16px}
-input,textarea,select{width:100%;padding:12px;font:inherit;border:1px solid #ccb;border-radius:8px;margin:6px 0 12px}
-.radio{background:var(--burg);color:#fff;text-align:center;border-radius:16px}.radio h2{color:var(--gold)}
-#streamMsg{margin-top:12px;color:var(--gold);font-weight:600}
-.give{text-align:center}.give .btn{font-size:24px;padding:22px 48px}
-footer{background:var(--ink);color:#eee;padding:36px 20px;text-align:center}footer a{color:var(--gold)}
-@media(min-width:800px){header button{display:none}nav{display:flex!important;justify-content:center;top:52px}nav a{border:0}
-.hero .ph{height:460px}.hero h1{font-size:56px}.two{grid-template-columns:1fr 1fr}.three{grid-template-columns:repeat(3,1fr)}}
+.bishop img{border-radius:14px;background:#fff;box-shadow:0 4px 18px #0001}
+.vids{display:grid;gap:16px;grid-template-columns:1fr 1fr}.vid{position:relative;border-radius:12px;overflow:hidden;display:block}
+.vid img{aspect-ratio:16/9;object-fit:cover;width:100%}.play{position:absolute;inset:0;margin:auto;width:56px;height:56px;border-radius:50%;background:#6B1E2Ed9;color:#fff;display:flex;align-items:center;justify-content:center;font-size:22px}
+.vid.big{grid-column:1/-1}
+.radio{background:var(--burg) url(img/logo.png) right -60px center/260px no-repeat;color:#fff;border-radius:18px;padding:36px 24px}.radio h2{color:var(--gold)}
+#streamMsg{margin-top:10px;color:var(--gold);font-weight:600}
+.book img{max-width:300px;margin:auto;border-radius:6px;box-shadow:0 10px 30px #0004}
+.mission{border-radius:14px;overflow:hidden}
+.team{display:grid;gap:18px;grid-template-columns:1fr 1fr}.person{margin:0;background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 4px 18px #0000000f;text-align:center}
+.person img{width:100%;aspect-ratio:4/5;object-fit:contain;background:linear-gradient(#fff,#f3ece0)}.person figcaption{padding:10px;font-size:16px}.person span{color:#7a6a55;font-size:14px}
+.gallery{display:grid;gap:10px;grid-template-columns:1fr 1fr}.gallery img{aspect-ratio:4/3;object-fit:cover;border-radius:10px}
+input,textarea,select{width:100%;padding:12px;font:inherit;border:1px solid #d8ccb8;border-radius:8px;margin:6px 0 12px;background:#fffdf9}
+.give{text-align:center}.give .btn{font-size:22px;padding:20px 44px}
+footer{background:#241014;color:#eee;padding:40px 20px;text-align:center}footer a{color:var(--gold)}footer img{width:80px;margin:0 auto 10px;border-radius:50%}
+@media(min-width:820px){#mb{display:none}nav{display:flex!important;justify-content:center;flex-wrap:wrap;top:58px}nav a{border:0;padding:10px 14px}
+.hero{min-height:640px}.hero h1{font-size:64px}.two{grid-template-columns:1fr 1fr;align-items:center}.three{grid-template-columns:repeat(3,1fr)}
+.vids{grid-template-columns:repeat(3,1fr)}.team{grid-template-columns:repeat(3,1fr)}.gallery{grid-template-columns:repeat(3,1fr)}}
 </style></head><body>
 <div class="preview">Design preview by Mighty Organix — not the live site</div>
-<header><span class="logo">Foundation Ministries Int'l</span><button onclick="document.querySelector('nav').classList.toggle('open')">☰ Menu</button></header>
-<nav><a href="#visit">Visit</a><a href="#bishop">Bishop</a><a href="#sermon">Sermons</a><a href="#radio">Radio</a><a href="#events">Events</a><a href="#join">Join</a><a href="#give">Give</a><a href="#contact">Contact</a></nav>
-<section class="hero"><div class="ph">Congregation photo</div><div class="txt"><h1>You're welcome here</h1><p>Foundation Ministries International · Knoxville, Tennessee</p><a class="btn" href="#visit">Plan Your Visit</a><a class="btn gold" href="#prayer">Request Prayer</a></div></section>
-<div class="visit"><section id="visit" class="grid two"><div><h2>Visit Us</h2><p><strong>Service times — to confirm</strong><br><span class="note">Sunday and midweek times to be added by the church.</span></p><p>2600 W. McClure Ln<br>Knoxville, TN 37920</p><p>📞 <a href="tel:+18652961247">865.296.1247</a><br>📞 <a href="tel:+18652000272">865.200.0272</a></p></div>
-<iframe loading="lazy" title="Map" src="https://www.google.com/maps?q=2600+W+McClure+Ln,+Knoxville,+TN+37920&output=embed"></iframe></section></div>
-<section id="bishop" class="grid two"><div class="ph" style="height:320px">Bishop Keith Poland Sr. photo</div><div><h2>Meet Bishop Keith Poland Sr.</h2><p class="note">[Placeholder bio — to be written with the Bishop.] A short, personal story of his calling, his ministry in Knoxville, and his vision for Foundation Ministries International will go here.</p></div></section>
-<section id="sermon"><h2>Latest Sermon</h2><div class="ph" style="aspect-ratio:16/9">▶ Sermon video placeholder</div><p><a href="#">Browse the sermon &amp; teaching archive →</a></p></section>
-<section id="radio"><div class="radio card"><h2>The Foundation Gospel Radio</h2><p>24/7 — a blend of Southern, Urban Gospel and Contemporary Christian music.</p><button class="btn gold" onclick="document.getElementById('streamMsg').textContent='stream link to add'">▶ Tap to Listen</button><div id="streamMsg"></div></div></section>
-<section id="events"><h2>Upcoming Events</h2><div class="grid three">
-<div class="card"><span class="tag">Sample</span><h3>Community Prayer Night</h3><p>Date &amp; time to be added</p></div>
-<div class="card"><span class="tag">Sample</span><h3>Bible Study</h3><p>Date &amp; time to be added</p></div>
-<div class="card"><span class="tag">Sample</span><h3>Fellowship Gathering</h3><p>Date &amp; time to be added</p></div></div></section>
-<section class="grid two"><div class="ph" style="height:340px;max-width:240px;margin:auto;width:100%">Book cover</div><div><h2>The Bishop's Book</h2><p class="note">Title and description to be added.</p><a class="btn" href="#">Find it on Amazon</a></div></section>
-<section><h2>Our Ministries Worldwide</h2><p>Foundation Ministries International is an umbrella ministry. Partner ministries and locations will be listed here, with a map.</p><div class="ph" style="height:200px">Partner ministries map / list</div></section>
-<section id="join" class="grid two"><form class="card" onsubmit="return false"><h2>Join or Get Ordained</h2><input placeholder="Full name"><input placeholder="Email or phone"><select><option>Membership</option><option>Ordainment</option></select><button class="btn">Send (preview only)</button></form>
-<form id="prayer" class="card" onsubmit="return false"><h2>Prayer Request</h2><input placeholder="Name (optional)"><textarea rows="4" placeholder="How can we pray for you?"></textarea><button class="btn">Submit (preview only)</button></form></section>
-<section id="give" class="give"><h2>Give</h2><p>Support the work of the ministry.</p><a class="btn gold" href="#">Give Online</a></section>
-<footer id="contact"><h3 style="color:var(--gold)">Foundation Ministries International</h3><p>Bishop Keith Poland Sr.<br>2600 W. McClure Ln, Knoxville, TN 37920<br><a href="tel:+18652961247">865.296.1247</a> · <a href="tel:+18652000272">865.200.0272</a><br><a href="mailto:fmiandwotc@gmail.com">fmiandwotc@gmail.com</a></p><p style="font-size:14px">Design preview by Mighty Organix — not the live site</p></footer>
+<header><a class="brand" href="#"><img src="img/logo.png" alt="Foundation Ministries International logo">Foundation Ministries Int'l</a><button id="mb" onclick="document.querySelector('nav').classList.toggle('open')">☰ Menu</button></header>
+<nav><a href="#visit">Visit</a><a href="#bishop">Our Pastors</a><a href="#sermon">Sermons</a><a href="#radio">Radio</a><a href="#events">Events</a><a href="#book">Book</a><a href="#ministries">Ministries</a><a href="#gallery">Gallery</a><a href="#join">Join</a><a href="#give">Give</a></nav>
+<section class="hero"><div class="txt"><img class="lg" src="img/logo.png" alt=""><h1>You're welcome here</h1><p>Here at Foundation Ministries International, we want to say Thank You for stopping by.</p><a class="btn gold" href="#visit">Plan Your Visit</a><a class="btn" style="border:2px solid #fff" href="#prayer">Request Prayer</a></div></section>
+<div class="visitwrap"><section id="visit" class="grid two"><div><h2>Plan Your Visit</h2><div class="rule"></div><p><strong>Service times — to confirm</strong></p><p>Foundation Ministries International<br>2600 W. McClure Ln.<br>Knoxville, TN 37920</p><p>📞 <a href="tel:+18652961247">865.296.1247</a><br>📞 <a href="tel:+18652000272">865.200.0272</a><br>✉️ <a href="mailto:fmiandwotc@gmail.com">fmiandwotc@gmail.com</a></p></div>
+<iframe loading="lazy" title="Map to 2600 W. McClure Ln" src="https://www.google.com/maps?q=2600+W+McClure+Ln,+Knoxville,+TN+37920&output=embed"></iframe></section></div>
+<section id="bishop" class="grid two bishop"><img src="img/keith-lisa.png" alt="Bishop Keith Poland Sr. and Lisa Poland" style="max-height:520px;margin:auto"><div><h2>Meet Bishop Keith &amp; Lisa Poland Sr.</h2><div class="rule"></div><p><strong>Founder/Senior Pastor - First Lady/Co-Pastor</strong></p><p>Bishop Keith Poland Sr. is the Founder of Foundation Ministries International &amp; the overseer. Bishop has been in the ministry for over 40 years and is currently the Senior Pastor at Word of Truth Church.</p><p>Lisa is Bishop Keith Poland's lovely and wonderful wife. She is also co-founder of Foundation Ministries International and a Board member. She has been in the ministry for 35+ years now.</p></div></section>
+<section id="sermon"><h2>Latest Sermons</h2><div class="rule"></div><div class="vids"><a class="vid big" href="https://www.youtube.com/watch?v=Q3o2Jv21_8Y" target="_blank" rel="noopener"><img src="img/yt-Q3o2Jv21_8Y.jpg" alt="Welcome video thumbnail"><span class="play">▶</span></a><a class="vid" href="https://www.youtube.com/watch?v=iSXi5FgiCSQ" target="_blank" rel="noopener"><img src="img/yt-iSXi5FgiCSQ.jpg" alt="Sermon video thumbnail"><span class="play">▶</span></a><a class="vid" href="https://www.youtube.com/watch?v=Q08se7oJfdk" target="_blank" rel="noopener"><img src="img/yt-Q08se7oJfdk.jpg" alt="Sermon video thumbnail"><span class="play">▶</span></a><a class="vid" href="https://www.youtube.com/watch?v=fFyCtPxfU04" target="_blank" rel="noopener"><img src="img/yt-fFyCtPxfU04.jpg" alt="Sermon video thumbnail"><span class="play">▶</span></a><a class="vid" href="https://www.youtube.com/watch?v=Qld0HLHsjE0" target="_blank" rel="noopener"><img src="img/yt-Qld0HLHsjE0.jpg" alt="Sermon video thumbnail"><span class="play">▶</span></a><a class="vid" href="https://www.youtube.com/watch?v=1b-z5XUxC1A" target="_blank" rel="noopener"><img src="img/yt-1b-z5XUxC1A.jpg" alt="Sermon video thumbnail"><span class="play">▶</span></a></div><p class="note">Recent sermons by Bishop Keith Poland Sr. include "You Are a Royal Priesthood," "You Are a Holy Nation," "The Day Hell Shouted" and "The Road to Damascus." Tap a video to watch on YouTube.</p></section>
+<section id="radio"><div class="radio"><h2>The Foundation</h2><p><em>"Knoxville's Own - 24/7 Christian Internet Radio"</em></p><p style="max-width:560px">The Foundation is a blend of Southern, Urban Gospel and Contemporary Christian that is available 24/7.</p><button class="btn gold" onclick="document.getElementById('streamMsg').textContent='stream link to add'">▶ Tap to Listen</button><div id="streamMsg"></div></div></section>
+<section id="events"><h2>Upcoming Events</h2><div class="rule"></div><div class="grid three"><div class="card"><span class="note">Sample</span><h3>Sunday Worship</h3><p>Date &amp; time to confirm</p></div><div class="card"><span class="note">Sample</span><h3>Bible Study</h3><p>Date &amp; time to confirm</p></div><div class="card"><span class="note">Sample</span><h3>Fellowship</h3><p>Date &amp; time to confirm</p></div></div></section>
+<section id="book" class="grid two book"><img src="img/book-4-keys.jpg" alt="4 Keys to Build a Church book cover"><div><h2>4 Keys to Build a Church</h2><div class="rule"></div><p>"This is my first book that I wrote that the Lord Jesus Christ put in my spirit to write. I have ministered on this subject many times and the Lord said 'Put it in a Book'. I believe that you will be truly blessed as you read these inspired words throughout this book." — Bishop Keith Poland Sr.</p><a class="btn" href="https://www.amazon.com/Four-Keys-Build-Church/dp/B0HHWWWP4F" target="_blank" rel="noopener">Find it on Amazon</a><a class="btn line" href="https://www.amazon.com/Four-Keys-Build-Church-ebook/dp/B0HHSSKR23" target="_blank" rel="noopener">Kindle Edition</a></div></section>
+<section id="ministries"><h2>Our Ministries Worldwide</h2><div class="rule"></div><img class="mission" src="img/mark1615.png" alt="Mark 16:15 — Go ye into all the world, and preach the gospel to every creature"><div class="grid two" style="margin-top:24px"><p>We are an umbrella ministry headquartered in the United States in Knoxville, Tennessee and we have ministries under our umbrella located across the world. Foundation Ministries International was founded by Senior Pastor/Bishop Keith Poland Sr. in 1993.</p><div class="card" style="display:flex;gap:16px;align-items:center"><img src="img/wotc-logo.png" alt="Word of Truth Church logo" style="width:90px"><p style="margin:0"><strong>Word of Truth Church</strong> was founded by Bishop Keith Poland Sr. in 2016 — the home church in Knoxville, Tennessee.</p></div></div>
+<h3 style="margin-top:36px">Meet the Staff</h3><div class="team"><figure class="person"><img src="img/keith-lisa.png" alt="Bishop Keith &amp; Lisa Poland Sr."><figcaption><strong>Bishop Keith &amp; Lisa Poland Sr.</strong><br><span>Founder/Senior Pastor - First Lady/Co-Pastor</span></figcaption></figure><figure class="person"><img src="img/jeremy-amy-kline.png" alt="Jeremy &amp; Amy Kline"><figcaption><strong>Jeremy &amp; Amy Kline</strong><br><span>Head Deacon &amp; Admin/Secretary</span></figcaption></figure><figure class="person"><img src="img/doug-long.png" alt="Doug Long"><figcaption><strong>Doug Long</strong><br><span>Associate Pastor</span></figcaption></figure><figure class="person"><img src="img/ross-drysdale.png" alt="Bishop Ross Drysdale"><figcaption><strong>Bishop Ross Drysdale</strong><br><span>Bishop of Eastern Florida</span></figcaption></figure><figure class="person"><img src="img/jose-flack.png" alt="Jose Flack"><figcaption><strong>Jose Flack</strong></figcaption></figure><figure class="person"><img src="img/jackton-caroline-arija.jpg" alt="Jackton &amp; Caroline Arija"><figcaption><strong>Jackton &amp; Caroline Arija</strong></figcaption></figure></div></section>
+<section id="gallery"><h2>Gallery</h2><div class="rule"></div><div class="gallery"><img src="img/yt-1b-z5XUxC1A.jpg" alt="Foundation Ministries International gathering (video still)"><img src="img/yt-iSXi5FgiCSQ.jpg" alt="Foundation Ministries International gathering (video still)"><img src="img/yt-Q3o2Jv21_8Y.jpg" alt="Foundation Ministries International gathering (video still)"><img src="img/yt-fFyCtPxfU04.jpg" alt="Foundation Ministries International gathering (video still)"><img src="img/yt-Qld0HLHsjE0.jpg" alt="Foundation Ministries International gathering (video still)"><img src="img/yt-Q08se7oJfdk.jpg" alt="Foundation Ministries International gathering (video still)"></div><p class="note">Stills from the ministry's videos; higher-resolution photos would come from the church.</p></section>
+<section id="join" class="grid two"><form class="card" onsubmit="return false"><h2>Join or Get Ordained</h2><p>If you would like to become a member of Foundation Ministries International or seeking Ordainment, reach out below.</p><input placeholder="Full name"><input placeholder="Email or phone"><select><option>Membership</option><option>Ordainment</option></select><button class="btn">Send (preview only)</button></form>
+<form id="prayer" class="card" onsubmit="return false"><h2>Prayer Request</h2><p>No matter what may be going on in your life at the time don't feel discouraged and alone. Jesus is here for you and so are we.</p><input placeholder="Name (optional)"><textarea rows="4" placeholder="How can we pray for you?"></textarea><button class="btn">Submit (preview only)</button></form></section>
+<section id="give" class="give"><h2>Give</h2><p>Help Support Our Vision... By Giving Today. Give in person, online, or by mail.</p><a class="btn gold" href="#">Give Online</a><p class="note">Venmo @AklineFMI · Cash App $WordoftruthFMI</p></section>
+<footer id="contact"><img src="img/logo.png" alt=""><h3 style="color:var(--gold)">Foundation Ministries International</h3><p>2600 W. McClure Ln., Knoxville, TN 37920<br><a href="tel:+18652961247">865.296.1247</a> · <a href="tel:+18652000272">865.200.0272</a><br><a href="mailto:fmiandwotc@gmail.com">fmiandwotc@gmail.com</a></p><p style="font-size:14px">Design preview by Mighty Organix — not the live site</p></footer>
 </body></html>
